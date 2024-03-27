@@ -1,0 +1,100 @@
+% !TeX root = apssamp.tex
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%   Version 4.2a of REVTeX, December 2014
+%
+%   Copyright (c) 2014 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.2
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[a4paper,14pt]{extarticle}
+\linespread{1.5}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{hyperref}% add hypertext capabilities
+\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+\usepackage[left=3cm, top=3cm, right=2cm, bottom=2cm]{geometry}
+\usepackage{cite}
+\usepackage[brazilian, portuguese]{babel}
+
+\title{Construção história da equação de Klein-Gordon\\ Mecânica quantica II}% Force line breaks with \\
+
+\author{Tiago Henrique Barbosa Alves}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+
+\section{Introdução}
+
+\paragraph{} A equação de Klein-Gordon foi primeiramente considerada como uma equação de uma
+onda quantica por Schrödinger, ao 
+tratar uma equação para descrever as ondas de de Broglie, a equação surge em suas notações em 1925 em uma tentativa 
+de aplicar ao átomo de hidrogênio. Porém a equação falho ao não levar em consideração o spin do elétron,
+falhando em predizer a estrutura fina do átomo de hidrogênio. Posteriormente Schrödinger publicou apenas uma versão não 
+relatívistica da equação que predizia os os niveis de energia do átomo de Bohr sem a estrutura fina.\cite{Kragh1984}
+
+Em 1926 a equação de Klein-Gordon surge simultâneamente nos trabalhos de Klein\cite{Klein:1926fj},
+Gordon\cite{Gordon1926}, Fock, de Donder e van den Dungen\cite{deDonder1926}. Sendo a junção dos trabalhos de Klein e Gordon tornado-se mais
+popular entre os físicos, enquanto que o trabalho de de Donede e van den Dungen não por não ter introduzido 
+a teoria quantica explicitamente e não fazia nenhuma referências de trabalhos física quântica acabou por receber menor destaque.
+
+
+\section{Desenvolvimento matemático}
+
+\paragraph{} A equação de Klein-Gordon pode ser obtida através da relação energia-momento
+\begin{equation}
+  E=\frac{p^2}{2m} 
+\end{equation}
+onde pelo princípio da correspondência $p\rightarrow -i \hbar \nabla $ e $E \rightarrow i \hbar \frac{\partial}{\partial t}$, onde 
+obtemos a equação de Schrödingerpara uma partícula livre.
+
+\begin{equation}
+  i\hbar \frac{\partial \Psi}{\partial t} = -\frac{\hbar ^2}{2m} \nabla^2 \Psi .
+\end{equation}
+
+Repetindo o processo para o análogo relatívistico da equação de energia momento $E^2 = p^2 + \left(\frac{mc}{\hbar}\right)^2$. Aplicando o princípio da correspondência 
+obtemos a equação de Klein-Gordon
+
+\begin{equation}
+  \left[\square + \left(\frac{mc}{\hbar}\right)\right]\Psi = 0, 
+\end{equation}
+onde $\square = \partial_\mu \partial^{\mu}$ é o operador d'Alambertiano. Para uma dedução detalhada, a partir de princípios mínimos é possivel consultar \cite[Groessing]{groessing2002derivation}.
+
+% The \nocite command causes all entries in a bibliography to be printed out
+% whether or not they are actually referenced in the text. This is appropriate
+% for the sample file to show the different styles of references, but authors
+% most likely will not want to use it.
+\bibliography{apssamp}{}
+\bibliographystyle{plain}
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******
