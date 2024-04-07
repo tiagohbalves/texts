@@ -1,0 +1,2 @@
+{"rule":"HUNSPELL_RULE","sentence":"^\\QAmerican Journal of Physics\\E$"}
+{"rule":"HUNSPELL_RULE","file":"appsamp.bib"}
