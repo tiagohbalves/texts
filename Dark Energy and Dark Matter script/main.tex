@@ -49,6 +49,7 @@
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage[showframe]{geometry}
+\usepackage{bm}
 
 
 % ---
@@ -73,7 +74,7 @@
 \renewcommand*{\backrefalt}[4]{
 	\ifcase #1 %
 		Nenhuma citação no texto.%
-	\or
+	\o
 		Citado na página #2.%
 	\else
 		Citado #1 vezes nas páginas #2.%
@@ -83,7 +84,7 @@
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\titulo{Roteiro:\\ Energia Escura}
+\titulo{Matéria escura e energia escura}
 \autor{Tiago H. B. Alves\texorpdfstring{\thanks{tiagohbalves@hotmail.com}}{}}
 \local{Brasil}
 \data{2024}
@@ -195,9 +196,9 @@
 O universo observado tal como conhecemos é constituído em quase toda sua totalidade por 3 ingredientes principais, ele é composto por\footnote{Os valores podem variar conforme a fonte, mas sempre se mantém próximo a essa proporção} \footnote{Também existe a componente de radiação, abundante e importante nos períodos iniciais do nosso universo, porém irrisória para a época atual}:
 
 \begin{itemize}
-	\item $\boldmath{5\%}$ de matéria bariônica;
-	\item $\boldmath{27.5\%}$ de matéria escura;
-	\item $\boldmath{67.5\%}$ de energia escura.
+	\item $\bm{5\%}$ de matéria bariônica;
+	\item $\bm{27.5\%}$ de matéria escura;
+	\item $\bm{67.5\%}$ de energia escura.
 \end{itemize}
 
 Com essas 3 componentes principais conseguimos descrever todos os fenômenos que observamos no universo, independente de escala. E todas as interações entre as componentes constituinte do nosso universo podem ser descritas a partir de 4 interações fundamentais, que são as interações forte, eletromagnética, fraca e gravitacional. Com essas interações tentamos conseguir descrever todos os fenômenos observados no universo, independentemente da escala utilizada.
@@ -237,28 +238,47 @@ A gravidade como visto é a interação principal que domina no cosmos. Porém a
 
 \subsection{Teoria aristotélica da gravitação}
 
-
-
 Aristóteles, foi um filósofo grego que desenvolveu diversas ideias sobre a natureza do mundo, incluindo algumas concepções sobre o movimento dos corpos e a gravidade. De acordo com a visão aristotélica, os corpos celestes, como planetas e estrelas, eram feitos de um elemento chamado "éter", que era diferente dos quatro elementos (terra, água, ar e fogo) que compunham os objetos terrestres. Ele acreditava que os corpos celestes eram perfeitamente esféricos e que se moviam em órbitas circulares e uniformes ao redor da Terra, que ele considerava o centro do universo, criando uma ideia de universo geocêntrico.
 
 Para Aristóteles também o movimento dos corpos seria sempre em direção ao seu lugar natural, lugar este que seria de repouso. Então para Aristóteles uma pedra caía porque o lugar natural delas seria o chão, os astro estariam no céu pois lá seria o seu lugar natural.
 
-Porém a teoria aristotélica era incapaz de explicar alguns fenômenos observado, como o movimento dos demais planetas do sistema solar. Sendo necessário uma nova teoria para explicar esses fenômenos/.
+Porém a teoria aristotélica era incapaz de explicar alguns fenômenos observado, como por exemplo o movimento dos demais planetas do sistema solar. Sendo necessário uma nova teoria para explicar esses fenômenos.
 
 \subsection{Teoria newtoniana da gravitação}
 
+A teoria gravitacional que seguiu após a teoria aristotélica foi a teoria newtoniana da gravitação. Essa teoria surgiu a partir da evolução do pensamento, com as ideias de inércia propostas por Galileu Galilei e posteriormente com a formulação gravitacional de Newton.
+
+Para Newton a gravidade seria uma forca que atua sobre todos os corpos com massa essa forca serra proporcional a massa dos objetos e inversamente proporcional ao quadrado da distancia, dado pela equação
+\begin{equation}
+	F = \frac{Gm_1m_2}{r^2} .
+\end{equation}
+Com a formulação newtoniana da gravidade diversos eventos, que antes não se conseguia justificar pelas teorias aristotélica, foram explicados pela teoria de Newton. Descobrimos que os planetas possuem órbitas elípticas, em torno do sol, conseguimos descobrir o oitavo planeta do sistema solar, Netuno, e  que todos os corpos caem com mesma aceleração em direção a terra, diferente do pensamento anterior em que achava-se que quanto maior a massa maior seria a aceleração em direção a terra.
+
+Porém mesmo sendo uma teoria que foi rapidamente aceita, a gravitação newtoniana havia alguns problemas, além dela por sí só não descrever a órbita completa de Mercúrio, ela também causava uma estranheza por ser uma força de ação instantânea, por isso se fazia necessário uma teoria gravitacional capaz de explicar tais fenômenos. A próxima teoria gravitacional que surge é a teoria gravitacional de Einstein chamada da teoria da relatividade geral.
 \subsection{Teoria da relatividade geral}
 
+A teoria da relatividade geral, traz um novo pensamento para a  física, nela a gravidade não é apenas uma forca que interage entre todos os corpos mas sim uma deformação do espaço, também na teoria da relatividade é proposto que o espaço ao invés de ter as 3 dimensões previamente conhecidas, era na real composto por 4 dimensões, que seriam 3 dimensiones espaciais e uma temporal.
 
-\section{Origem histórica}
-Quando Einstein apresentou a sua equação para a relatividade geral, um conjunto total de 16 equações sumarizadas por:
+Com isso na relatividade geral a gravidade passa de ter um caráter exclusivamente físico e se torna uma teoria geométrica, tornando-se também uma propriedade do espaço tempo, para isso Einstein surge com sua famosa equação\footnote{De fato essa equação está sumarizada e contém na verdade em seu significado um total de 16 equações que correspondem  ao conjunto total.}
 \begin{equation}
-	R_{\mu \nu}+\frac{1}{2}g_{\mu \nu} R = T_{\mu \nu}
+	R_{\mu \nu}+\frac{1}{2}g_{\mu \nu} R = T_{\mu \nu},
 \end{equation}
-\section{Energia escura}
 
-\section{Evidencias}
-\section{Candidatos}
+ao qual podemos é dividida em dois lados, no lado esquerdo contém a parte de geometria, na qual define como o espaço se curva e no lado direito da equação em como a matéria curva o espaço.
+
+Em consequência da característica geométrica da gravidade, consegui-se justificar a órbita de mercurio, que por estar mais perto do sol sentia o campo gravitacional de maneira diferente dos demais, alterando o seu perielio. E também descobriu novos efeitos causados pela gravidade, entre eles o lenteamento gravitacional.
+
+O lentiamento gravitacional é um efeito causado pela deformação da luz ao passar por um campo gravitcional bem forte. A luz, como se sabe, possui uma trajetória em linha reta, porém, como a gravidade curva o espaço, ela também curva a trajetória do raio de luz, faznedo a função de uma lente. Esse efeito foi primeiramente observado em sobral em 1919, que foi o primeiro experimento que comprovou a teoria da relatividade geral e também é um fenômeno importante para entendermos o comportamento de graneds estruturas.
+
+\begin{figure}\centering
+	\caption{Diagrama de uma lente gravitacional, mostrando como a luz e uma galáxia distante, ou uma estrela, pode ser curvada devido a interação gravitacional.}
+	\includegraphics[width=10cm]{lens.pdf}
+	\centering
+	{\par \footnotesize Fonte: NASA, ESA, Ann Feild (STScI), Frank Summers (STScI)
+		}
+\end{figure}
+
+A teoria da relatividade geral é a teoria gravitacional mais recente que temos, ela consegue descrever uma grande gama de fenômenos cosmológicos no nosso universo. Porém ela falha em descrevê-lo como um todo. Existem dois fenômenos importantes que a relatividade geral as demais interáções físicas não descrevem, que são a energia escura e a matéria escura. Que são dois fênomenos que não conseguimos medir seus efeitos no nosso sisetma solar mas de suma importância para o universo como um todo. 
 
 \section{Matéria escura}
 
@@ -277,7 +297,7 @@ da matéria escura refutam as ideias propostas por Oort.
 
 O trabalho de Zwicky e a ideia proposta da matéria escura foi ignorados na sua época, ficando congelada por quase 40 anos. Foi apenas nos anos de 1970
 que a ideia foi ressuscitada, quando astrônomos observaram o movimento de galáxias-satélite\footnote{pequenas
-galáxias próximas às grandes}, que só podiam ser explicadas pela presença de uma matéria adicional e invisível.
+	galáxias próximas às grandes}, que só podiam ser explicadas pela presença de uma matéria adicional e invisível.
 Mas seu status se concretizou de verdade a partir dos trabalhos de Vera Rubin, astrônoma do Instituto Carnegie, de Washington ,que trabalhou com o astrônomo Kent Ford. Depois da pós-graduação na Universidade de Georgetown,
 Rubin decidiu medir o movimento angular de estrelas em galáxias \footnote{Inicialmenete  por Andrômeda}.
 Ela e Kent Ford, descobriram que as
@@ -305,7 +325,28 @@ A partir da expanão do universo é possível calcular a sua densidade crítica 
 A estimativa utilizando a matéria luminosa (utilizando esrtelas e o gás intraestelar ou extra estelar) é uma porcentagem pequena da densidade critica. Isto é consisetnte com os modelos da nuclosintese primordial.
 
 Outra pilar da cosmologia é a distribuição de galáxias no universo. Nos primórdis da cosmologia pensava-se que a distribuição de galáxias seguiria um caráter randomico e que estariam distribuidas de maneira quase homogênea no espaço.
-Porém com dados da distribuição descobriu que a distribuição das galáxias estão interligadas por filamentos, semelhantes a uma teia de aranha, e que o expaço entre os filamêntos são praticamente vazios.
+Porém com dados da distribuição descobriu que a distribuição das galáxias estão interligadas por filamentos, semelhantes a uma teia de aranha, e que o expaço entre os filamêntos são praticamente vazios. Podemos ver como se dá essa estrutura através da figura \ref{fig2}, onde conseguimos observar essa teia cósmica.
+
+\begin{figure}\centering
+	\caption{Teia cósmida da matéria escura, nela é possível ver os filamentos e a concentração de matérias nos vértices.}
+	\includegraphics[width=10cm]{dark_net.png}\label{fig2}
+	{\par FONTE: USDE, 2020}
+\end{figure}
+
+Tabém como vimos a gravidade curva a luz, causando o que chamamos de lentes gravitacionais, e as lentes gravitacionais também são um forte indicativo da existência da matéria escura, pois pela curvatura que é feita no raio de luz, quando este passa por uma galáxia conseguimos medir sua massa, e comparando com os valores obtidos a partir de sua intensidade luminosa também percebemos a sua divergencia.
+
+Por fim, o indicativo mais significativo para nós sobre a existência da matéria escura, e também um indicativo da energia escura, é a própria idade do nosso universo. Se nosso universo fosse compsoto apenas por matéria bariônica ele seria velho demais com o que sabemos hoje em dia, ou a força gravitacional que fez a galáxias se formarem, seria menor impossibilitando a existência das galáxias em seu formato atual. 
+
+\subsection{Alguns Candidatos}
+Mas o que seria então a matéria escura? Até agora sabemos que a matéria escura tem se comporta gravitacionalmente no universo e que também não énenhuma interação com a luz, ou em outras palvras ela não possui interação com a força eletromagnética. Também sabemos que la está presente deste o início do nosso universo até os tempos atuais. 
+
+Com isso temos alguns indicativos do que a matéria escura não pode ser. Sabendo como a matéria escura se comporta conseguimos fazer algumas predições a cerca de sua natureza e criar alguns modelos 
+\section{Energia escura}
+
+\section{Evidencias}
+\section{Candidatos}
+
+
 
 \section{Evidencias iniciais}
 \subsection{Matéria escura local}
